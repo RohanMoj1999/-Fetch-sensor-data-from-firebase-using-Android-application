@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Sensor Node</string>
+    <string name="on" translatable="false">ON</string>
+    <string name="off" translatable="false">OFF</string>
+    <string name="humidity" translatable="false">Humidity</string>
+    <string name="welcome_menu" translatable="false">WELCOME TO THE WORLD OF IOT</string>
+    <string name="menu_choose" translatable="false">CHOOSE AN OPTION</string>
+    <string name="iot" translatable="false">An app to manage the IoT device</string>
+    <string name="scheduler" translatable="false">SCHEDULER</string>
+    <string name="cloud" translatable="false">CLOUD</string>
+    <string name="chn" translatable="false">CHANGE LANGUAGE</string>
+
+    <string name="database" translatable="false">DATABASE</string>
+    <string name="temperature" translatable="false">TEMPERATURE</string>
+    <string name="pulse" translatable="false">PULSE</string>
+    <string name="spo2" translatable="false">SpO2</string>
+    <string name="low" translatable="false">Lowest Value</string>
+    <string name="high" translatable="false">High Value</string>
+    <string name="mean" translatable="false">Mean Value</string>
+
+    <string name="interval" translatable="false">Set Interval</string>
+    <string name="interval_process" translatable="false">ENTER INTEGER VALUES FOR MINUTES. ADD DECIMALS FOR SECONDS</string>
+    <string name="interval_time" translatable="false">NEW INTERVAL IS SET FOR</string>
+    <string name="min" translatable="false">MINUTES</string>
+    <string name="status" translatable="false">SENSOR NODE STATUS</string>
+    <string name="set" translatable="false">SET</string>
+
+    <string name="shop" translatable="false">SHOPPING</string>
+
+    <string name="change" translatable="false">CHANGE LANGUAGE</string>
+</resources>

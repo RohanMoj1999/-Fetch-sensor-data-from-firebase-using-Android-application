@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sensor Node</string>
+    <string name="on" translatable="false">पर</string>
+    <string name="off" translatable="false">बंद</string>
+    <string name="humidity" translatable="false">नमी</string>
+    <string name="welcome_menu" translatable="false">IoT की दुनिया में आपका स्वागत है</string>
+    <string name="menu_choose" translatable="false">कोई विकल्प चुनें</string>
+    <string name="iot" translatable="false">डिवाइस को प्रबंधित करने के लिए एक ऐप</string>
+    <string name="scheduler" translatable="false">अनुसूची</string>
+    <string name="cloud" translatable="false">क्लाउड डेटाबेस</string>
+
+    <string name="database" translatable="false">डेटाबेस</string>
+    <string name="temperature" translatable="false">तापमान</string>
+    <string name="pulse" translatable="false">कंपन</string>
+    <string name="spo2" translatable="false">एसपीओ २</string>
+    <string name="low" translatable="false">सबसे कम कीमत</string>
+    <string name="high" translatable="false">उच्चतम मूल्य</string>
+    <string name="mean" translatable="false">माध्य मूल्य</string>
+
+    <string name="interval" translatable="false">अंतराल सेट करें</string>
+    <string name="interval_process" translatable="false">मिनट के लिए पूर्णांक का मान दर्ज करें। सेकंड के लिए दशमलव जोड़ें</string>
+    <string name="interval_time" translatable="false">नया ब्रेक सेट किया गया है</string>
+    <string name="min" translatable="false">मिनट</string>
+    <string name="status" translatable="false">सेंसर नोड की स्थिति</string>
+
+    <string name="change" translatable="false">भाषा बदलें</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sensor Node</string>
+    <string name="on" translatable="false">চালু</string>
+    <string name="off" translatable="false">বন্ধ</string>
+    <string name="humidity" translatable="false">আর্দ্রতা</string>
+    <string name="welcome_menu" translatable="false">আইওটি বিশ্বের স্বাগতম</string>
+    <string name="menu_choose" translatable="false">একটি বিকল্প নির্বাচন করুন</string>
+    <string name="iot" translatable="false">IoT ডিভাইস পরিচালনা করার জন্য একটি অ্যাপ</string>
+    <string name="scheduler" translatable="false">সময়তালিকা</string>
+    <string name="cloud" translatable="false">ক্লাউড ডেটাবেস</string>
+
+    <string name="database" translatable="false">তথ্যশালা</string>
+    <string name="temperature" translatable="false">তাপমাত্রা</string>
+    <string name="pulse" translatable="false">স্পন্দন</string>
+    <string name="spo2" translatable="false">এসপিও 2</string>
+    <string name="low" translatable="false">সর্বনিম্ন মান</string>
+    <string name="high" translatable="false">উচ্চ মান</string>
+    <string name="mean" translatable="false">গড় মান</string>
+
+    <string name="interval" translatable="false">ব্যবধান সেট করুন</string>
+    <string name="interval_process" translatable="false">মিনিটের জন্য পূর্ণসংখ্যার মান লিখুন। সেকেন্ডের জন্য দশমিক যোগ করুন</string>
+    <string name="interval_time" translatable="false">নতুন বিরতি সেট করা হয়েছে</string>
+    <string name="min" translatable="false">মিনিট</string>
+    <string name="status" translatable="false">সেন্সর নোড স্থিতি</string>
+    <string name="set" translatable="false">সেট</string>
+
+    <string name="change" translatable="false">ভাষা পরিবর্তন করুন</string>
+</resources>

@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1078609034598",
+    "firebase_url": "https://nodemcu-42b89-default-rtdb.firebaseio.com",
+    "project_id": "nodemcu-42b89",
+    "storage_bucket": "nodemcu-42b89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078609034598:android:685832248c001ef1c5dca7",
+        "android_client_info": {
+          "package_name": "com.example.SensorNode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZmqXo-irUP4QqaEPzwztWlE2b-GkDK9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078609034598:android:95bb239e11d6bb04c5dca7",
+        "android_client_info": {
+          "package_name": "com.example.nodemcu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZmqXo-irUP4QqaEPzwztWlE2b-GkDK9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078609034598:android:d54402e3aaf4a7f1c5dca7",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZmqXo-irUP4QqaEPzwztWlE2b-GkDK9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078609034598-e4r690gt3gan8qj8g5fsq02hsd7dart3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_baseline_biotech_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/iot"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="SCHEDULER"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/miniText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/iot"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                app:neumorph_shapeType="pressed">
+
+                <EditText
+                    android:id="@+id/value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:hint="@string/interval"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="25dp"
+                    android:textStyle="normal" />
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="79dp"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/card"
+                android:background="@drawable/rounded"
+                android:gravity="center"
+                android:text="SET"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded2"
+            android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/database"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radius"
+                    android:orientation="vertical">
+                    // setting orientation of image temperature
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/pulseimage"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/ic_temp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:text="@string/temperature"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    //setting orientation of the text
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/low"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetriveTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="°C"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/high"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetriveTemp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="°C"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/mean"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetriveTempavg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="°C"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                // pulse
+                // setting orientation of image
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radius"
+                    android:orientation="vertical">
+                    // setting orientation of image temperature
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/ic_pulse" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:text="@string/pulse"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+
+                    //setting orientation of the text
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/low"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetrivepulse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/high"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetrivepulse2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/mean"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetrivepulavg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                // spo2
+                // setting orientation of image
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radius"
+                    android:orientation="vertical">
+                    // setting orientation of image temperature
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/ic_spo2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:text="@string/spo2"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                    //setting orientation of the text
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/low"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetriveoxygen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="%"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/high"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetriveoxygen2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="%"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="@string/mean"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/idTVRetrivespo2avg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:gravity="center"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/times_new_roman_bold"
+                            android:paddingBottom="5dp"
+                            android:text="%"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:visibility="visible"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/loc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/language" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:visibility="visible"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.993"
+        app:srcCompat="@drawable/location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

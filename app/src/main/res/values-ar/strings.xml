@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Sensor Node</string>
+        <string name="on" translatable="false">على</string>
+        <string name="off" translatable="false">إيقاف</string>
+        <string name="humidity" translatable="false">رطوبة</string>
+        <string name="welcome_menu" translatable="false">مرحبًا بك في عالم إنترنت الأشياء</string>
+        <string name="menu_choose" translatable="false">إختر خيار</string>
+        <string name="iot" translatable="false">تطبيق لإدارة جهاز إنترنت الأشياء</string>
+        <string name="scheduler" translatable="false">قائمة الوقت</string>
+        <string name="cloud" translatable="false">قاعدة البيانات السحابية</string>
+
+        <string name="database" translatable="false">قاعدة البيانات</string>
+        <string name="temperature" translatable="false">درجة حرارة</string>
+        <string name="pulse" translatable="false">اهتزاز</string>
+        <string name="spo2" translatable="false">SpO2</string>
+        <string name="low" translatable="false">أدنى قيمة</string>
+        <string name="high" translatable="false">جودة عالية</string>
+        <string name="mean" translatable="false">متوسط القيمة</string>
+
+        <string name="interval" translatable="false">اضبط الفاصل الزمني</string>
+        <string name="interval_process" translatable="false">أدخل قيمة العدد الصحيح للدقيقة. أضف الكسور العشرية للثواني</string>
+        <string name="interval_time" translatable="false">تم تعيين استراحة جديدة</string>
+        <string name="min" translatable="false">الدقائق</string>
+        <string name="status" translatable="false">حالة عقدة الاستشعار</string>
+
+        <string name="change" translatable="false">تغيير اللغة</string>
+</resources>
